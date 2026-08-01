@@ -8,7 +8,11 @@ import { RiUploadCloudLine } from "react-icons/ri";
 const MAX_IMAGES = 5;
 const MAX_SIZE = 5 * 1024 * 1024;
 
-const ImageUploader = ({ images, onChange }) => {
+const ImageUploader = ({ images, updateField }) => {
+    // console.log("images:", images);
+    // console.log("onChange:", updateField);
+
+
     const inputRef = useRef(null);
     const [dragging, setDragging] = useState(false);
 
@@ -52,7 +56,7 @@ const ImageUploader = ({ images, onChange }) => {
             });
         }
 
-        onChange(selected);
+        updateField("images", selected);
     };
 
     const handleChange = (e) => {
@@ -70,7 +74,7 @@ const ImageUploader = ({ images, onChange }) => {
 
         const updated = images.filter((img) => img.id !== id);
 
-        onChange(updated);
+        updateField("images", updated);
     }
 
     const handleDrop = (e) => {
