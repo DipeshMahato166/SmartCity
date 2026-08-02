@@ -1,6 +1,8 @@
 import Card from "../components/index/service/Card";
 import { GoReport } from "react-icons/go";
 import { PiNoteBold } from "react-icons/pi";
+import { SiEventstore } from "react-icons/si";
+import { MdImportContacts } from "react-icons/md";
 
 
 const ServicePage = () => {
@@ -59,6 +61,24 @@ const ServicePage = () => {
                             title: "Government Services",
                             content:
                                 "One portal for all your government services. No need to search or visit different government websites.",
+                            link: "/government"
+                        }}
+                    />
+                    <Card
+                        props={{
+                            icon: <MdImportContacts  className="h-6 w-6 text-white" />,
+                            title: "Public Events",
+                            content:
+                                "Explore local events, participate in civic initiatives, and stay connected with what's happening in your city.",
+                            link: "/government"
+                        }}
+                    />
+                    <Card
+                        props={{
+                            icon: <SiEventstore className="h-6 w-6 text-white" />,
+                            title: "Emergency Hotlines",
+                            content:
+                                "Access essential emergency contacts for police, ambulance, fire brigade, hospitals, and disaster response services in one place",
                             link: "/government"
                         }}
                     />
