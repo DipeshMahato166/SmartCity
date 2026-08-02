@@ -79,7 +79,7 @@ const ServicePage = () => {
                             title: "Emergency Hotlines",
                             content:
                                 "Access essential emergency contacts for police, ambulance, fire brigade, hospitals, and disaster response services in one place",
-                            link: "/government"
+                            link: "/emergency"
                         }}
                     />
                 </div>
